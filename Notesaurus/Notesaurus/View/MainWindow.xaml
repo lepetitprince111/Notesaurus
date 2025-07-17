@@ -1,0 +1,19 @@
+﻿<Window x:Class="Notesaurus.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Notesaurus"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="749">
+    <Grid Background="#FFFFDD59">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Rectangle HorizontalAlignment="Left" Height="339" Stroke="Black" VerticalAlignment="Center" Width="692" RadiusX="20" RadiusY="20" Fill="White" Margin="24,0,0,0"/>
+        <Label Content="Select your semester" HorizontalAlignment="Center" Margin="0,8,0,0" FontSize="22" FontFamily="Broadway" Height="35" VerticalAlignment="Top" Width="252"/>
+        <Button x:Name="BtnAddSemester" Content="+" Margin="670,48,0,0" Background="{x:Null}" BorderBrush="{x:Null}" FontSize="36" FontWeight="Bold" FontFamily="Rockwell Extra Bold" Click="BtnAddSemester_Click" Height="47" VerticalAlignment="Top" HorizontalAlignment="Left" Width="46"/>
+        <ListBox d:ItemsSource="{d:SampleData ItemCount=5}" Margin="65,100,104,76" BorderBrush="{x:Null}"/>
+
+    </Grid>
+</Window>
